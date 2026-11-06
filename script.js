@@ -26,12 +26,16 @@ const bagProducts = collections.flatMap(({ brand, products: brandProducts }) =>
 );
 
 const shadeBrandFiles = [
+  { brand: "Bottega Veneta", prefix: "botteca", files: Array.from({ length: 4 }, (_, index) => index + 1) },
+  { brand: "Burberry", prefix: "burberry", files: Array.from({ length: 4 }, (_, index) => index + 1) },
   { brand: "Bvlgari", prefix: "bvlgari", files: Array.from({ length: 21 }, (_, index) => index + 1).filter((number) => number !== 15) },
   { brand: "Cartier", prefix: "cartier", files: Array.from({ length: 7 }, (_, index) => index + 1) },
-  { brand: "Chanel", prefix: "chanel", files: Array.from({ length: 30 }, (_, index) => index + 1) },
-  { brand: "Dior", prefix: "dior", files: Array.from({ length: 11 }, (_, index) => index + 1) },
-  { brand: "Gucci", prefix: "gucci", files: Array.from({ length: 7 }, (_, index) => index + 1) },
+  { brand: "Chanel", prefix: "chanel", files: Array.from({ length: 31 }, (_, index) => index + 1) },
+  { brand: "Dior", prefix: "dior", files: Array.from({ length: 12 }, (_, index) => index + 1) },
+  { brand: "Gucci", prefix: "gucci", files: Array.from({ length: 8 }, (_, index) => index + 1) },
+  { brand: "Loewe", prefix: "loewe", files: Array.from({ length: 4 }, (_, index) => index + 1) },
   { brand: "Prada", prefix: "prada", files: Array.from({ length: 10 }, (_, index) => index + 1) },
+  { brand: "YSL (Saint Laurent)", prefix: "ysl", files: Array.from({ length: 5 }, (_, index) => index + 1) },
 ];
 
 const jewelryBrandFiles = [
@@ -76,26 +80,8 @@ const unknownJewelryFiles = [
 ];
 
 const unknownShadeFiles = [
-  "1e202ffa-9620-4ae0-bc89-6bc621342a2d.JPG",
-  "2dfb8094-5bee-4279-8ae7-e31598e6d1f6.JPG",
-  "2ff1d142-7cd2-4e03-a3e5-898b78b4f0e8.JPG",
-  "4cb8b53b-61ac-4b08-b912-234a4ac6af3d.JPG",
-  "9ab4dd1a-45f9-4e39-95b9-4054bfdc46f2.JPG",
-  "116bfa47-a08e-454d-acf1-bb197098ca84.JPG",
-  "373c36df-8dfb-478e-89b0-1b6966c2e062.JPG",
-  "715c9a7b-1696-45a1-b067-7d70fb939c5e.JPG",
-  "68489a94-973e-438f-8dd4-f9c149ad4364.JPG",
-  "35044874-783b-4478-b209-839003a4a6be.JPG",
-  "a8255f32-d7ed-47ff-a6db-790117998b1a.JPG",
-  "b0c3d16e-431f-4e82-9bcb-dfaa1713bfc0.JPG",
-  "b6f723f6-8c78-45c7-a59c-1f7dc2bf1b0a.JPG",
-  "b07c692f-6670-4885-bf7e-bd1222ff7861.JPG",
-  "ba3ed23d-b429-4cd8-a9d1-bd185029a84a.JPG",
-  "bb65b95d-d46d-434f-b490-9276e2f2ca8c.JPG",
-  "f5c05da6-38a6-465e-a299-76e411fbf44d.JPG",
-  "fbbb4fe2-8a6b-4e9f-982e-daff9bae9f0f.JPG",
-  "fc2a1a1f-a55a-4b4f-9342-51284409720e.JPG",
-  "fdabc388-3d4c-4a94-8d03-81180a837dba.JPG",
+  "2d22d39a-cf4a-4e1e-8054-c389bb983711.JPG",
+  "bf5318eb-a825-4fb4-81a7-e9d076843c9d.JPG",
 ];
 
 function estimateAccessoryPrice(brand) {
@@ -142,7 +128,7 @@ const shadeProducts = shadeBrandFiles.flatMap(({ brand, prefix, files }) =>
   name: `Designer Sunglasses ${String(index + 1).padStart(2, "0")}`,
   price: estimateAccessoryPrice("Unidentified"),
   category: "Shades",
-  image: `image/Shades/unknown/${filename}`,
+  image: `image/unknown/${filename}`,
   estimatedPrice: true,
 })));
 
