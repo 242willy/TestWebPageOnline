@@ -13,45 +13,47 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="announcement">
-      <span>50 designer handbag styles</span>
-      <span class="announcement-divider" aria-hidden="true">✦</span>
-      <span>A considered edit of timeless icons</span>
-    </div>
+    <div class="page-shell">
+      <div class="announcement">
+        <span>50 designer brand styles</span>
+        <span class="announcement-divider" aria-hidden="true">✦</span>
+        <span>A considered edit of timeless icons</span>
+      </div>
 
-    <header class="site-header">
-      <a class="wordmark" href="#" aria-label="AlluringLuxury home"><img src="image/logo.jpeg" width="180" height="60" alt="AlluringLuxury"></a>
-      <a class="header-search" href="#search-input" aria-label="Search styles">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
-      </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#collection">The collection</a>
-        <a href="#brand-filters">Designers</a>
-        <a href="#about">Our point of view</a>
-      </nav>
-      <button class="bag-trigger" id="open-bag" type="button" aria-label="Open shopping bag" aria-expanded="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
-        <span>Bag</span><span class="bag-count" id="bag-count" aria-live="polite">0</span>
-      </button>
-    </header>
+      <header class="site-header">
+        <a class="wordmark logo" href="#" aria-label="AlluringLuxury home"><img src="image/logo.png" width="220" height="80" alt="AlluringLuxury"></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#collection">The collection</a>
+          <a href="#brand-filters">Designers</a>
+          <a href="#about">Our point of view</a>
+        </nav>
+        <div class="header-actions">
+          <button class="header-search" type="button" aria-label="Search styles">Search</button>
+          <button class="bag-trigger" id="open-bag" type="button" aria-label="Open shopping bag" aria-expanded="false">
+            <span>Bag</span><span class="bag-count" id="bag-count" aria-live="polite">0</span>
+          </button>
+        </div>
+      </header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> THE HANDBAG EDIT · VOL. 01</p>
-          <h1 id="hero-title">A little luxury,<br><em>in every detail.</em></h1>
-          <p class="hero-description">Discover iconic designer handbags, with clear prices across a considered edit of timeless styles.</p>
-          <a class="button button-dark" href="#collection">Shop the collection <span aria-hidden="true">↗</span></a>
-          <div class="hero-note"><span class="note-star">✳</span> 50 designer styles <span class="note-divider"></span> Prices as listed</div>
-        </div>
-        <div class="hero-art" aria-label="Illustration of a handbag">
-          <div class="hero-art-sun"></div>
-          <img src="image/model.jpeg" alt="FASHION ICON" width="250" height="250" class="hero-art-image">
-          <div class="art-caption"><span>THE FASHION ICON</span><span>2026</span></div>
-          <span class="hero-stamp" aria-hidden="true">AL</span>
-        </div>
-        <div class="hero-index" aria-hidden="true">2026</div>
-      </section>
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> THE FASHION ICON · VOL. 01</p>
+            <h1 id="hero-title">A little luxury,<br><em>in every detail.</em></h1>
+            <p class="subtext">Discover iconic fashion models with clear stance across a considered edit of timeless styles.</p>
+            <p class="supporting">One polished silhouette at a time. Discover the pieces meant to move effortlessly from weekday to evening.</p>
+            <div class="cta-row">
+              <a class="cta-solid" href="#collection">Shop the collection</a>
+              <a class="cta-outline" href="#about">Read our edit</a>
+            </div>
+            <div class="hero-meta"><span>50 designer styles</span><span><strong>Prices</strong> as listed</span></div>
+          </div>
+          <div class="hero-art hero-media" aria-label="Fashion portrait of a model carrying a handbag">
+            <img src="image/model.jpeg" alt="FASHION ICON" width="500" height="500" class="hero-art-image">
+            <div class="photo-tag"><span>fashion house</span><strong>Alluring Luxury</strong></div>
+            <div class="vertical-label">VOL. 01</div>
+          </div>
+        </section>
 
       <section class="brand-strip" id="brands" aria-label="Explore the edit">
         <a class="category-card category-card-classics" href="#collection">
