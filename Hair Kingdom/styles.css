@@ -139,6 +139,17 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
 .policy-index { padding-top: 3px; color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .1em; }
 .policy-item h3 { margin: 0 0 8px; font-size: 21px; }
 .policy-item p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.9; }
+.faq-section { display: grid; gap: 78px; background: var(--paper); }
+.faq-category { display: grid; grid-template-columns: .72fr 1.28fr; align-items: start; gap: clamp(45px, 9vw, 120px); }
+.faq-category-heading { position: sticky; top: 125px; }
+.faq-category-heading h2 { margin: 0; font-size: clamp(34px, 4vw, 49px); letter-spacing: -.035em; line-height: 1.15; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-item { padding: 21px 0; border-bottom: 1px solid var(--line); }
+.faq-item h3, .faq-answer { display: grid; grid-template-columns: 24px 1fr; gap: 13px; }
+.faq-item h3 { margin: 0 0 9px; font-size: 18px; line-height: 1.45; }
+.faq-answer { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.9; }
+.faq-answer a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.faq-label { color: var(--gold); font-family: var(--serif); font-size: 17px; font-weight: 600; }
 .closing-banner { padding: 78px 24px 83px; color: #fff; background: #262019; text-align: center; }
 .closing-banner .eyebrow { color: var(--gold-light); }
 .closing-banner h2 { margin-bottom: 25px; font-size: clamp(39px, 5.2vw, 61px); }
@@ -245,6 +256,13 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
   .returns-heading h2 { font-size: 43px; }
   .policy-item { grid-template-columns: 29px 1fr; gap: 8px; padding: 19px 0; }
   .policy-item h3 { font-size: 19px; }
+  .faq-section { gap: 48px; }
+  .faq-category { grid-template-columns: 1fr; gap: 17px; }
+  .faq-category-heading { position: static; }
+  .faq-category-heading h2 { font-size: 38px; }
+  .faq-item { padding: 17px 0; }
+  .faq-item h3, .faq-answer { grid-template-columns: 20px 1fr; gap: 9px; }
+  .faq-item h3 { font-size: 17px; }
   .closing-banner { padding: 63px 20px 68px; }
   .closing-banner h2 { font-size: 42px; }
   .site-footer nav { gap: 14px 19px; }
