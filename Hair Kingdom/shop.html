@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#17130f">
+    <meta name="description" content="Shop premium, unprocessed human hair Body Wave Bundles from Hair Kingdom.">
+    <title>Shop Body Wave Bundles — Hair Kingdom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">A little luxury for your everyday crown <span aria-hidden="true">✦</span> Trusted since 2021</div>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Hair Kingdom home"><img src="media/logo.png" alt="Hair Kingdom — Beautiful Hair, with beautiful care"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu"><span></span><span></span></button>
+      <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="shop.html" aria-current="page">Shop</a><a href="story.html">Our story</a><a href="care.html">Hair care</a><a href="returns.html">Returns</a>
+      </nav>
+      <button class="bag-button" type="button" aria-label="Open shopping bag">Bag <span class="bag-count" aria-live="polite">0</span></button>
+    </header>
+    <main>
+      <section class="page-intro">
+        <p class="eyebrow">The signature collection</p>
+        <h1>Meet your new <em>favorite.</em></h1>
+        <p>One beautiful texture. A whole world of possibilities. Find your length and make it yours.</p>
+      </section>
+      <section class="shop-section section-pad" id="product">
+        <div class="product-layout">
+          <div class="product-visual">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Model showcasing a sleek, versatile hairstyle" fetchpriority="high">
+            <span class="product-image-label">THE SIGNATURE TEXTURE <span>✦</span></span>
+          </div>
+          <div class="product-details">
+            <p class="eyebrow">Hair Kingdom essential</p>
+            <h2>Body Wave Bundles</h2>
+            <div class="review-line"><span class="product-sparkle" aria-hidden="true">✦</span><span>Made for your everyday and everything-after</span></div>
+            <p class="product-intro">Meet ultra-luxurious body wave: a soft, cascading pattern with natural movement and a beautiful finish. Wear it wavy, straighten it sleek, or style it your way.</p>
+            <ul class="product-features">
+              <li><span>Material</span><span>100% unprocessed human hair</span></li>
+              <li><span>Weight</span><span>Approx. 3.5 oz (100 g) per bundle</span></li>
+              <li><span>Color</span><span>Natural black / 1B</span></li>
+              <li><span>Construction</span><span>Double wefted, full from root to tip</span></li>
+              <li><span>Versatility</span><span>Can be heat styled and custom colored</span></li>
+              <li><span>Longevity</span><span>1–2+ years with proper care</span></li>
+            </ul>
+            <form class="add-to-bag-form">
+              <label class="field-label" for="bundle-length">Choose your length</label>
+              <div class="product-controls">
+                <select id="bundle-length" name="length" aria-label="Bundle length">
+                  <option value="12&quot;">12 inches</option><option value="14&quot;">14 inches</option><option value="16&quot;">16 inches</option><option value="18&quot;" selected>18 inches</option><option value="20&quot;">20 inches</option><option value="22&quot;">22 inches</option><option value="24&quot;">24 inches</option><option value="26&quot;">26 inches</option><option value="28&quot;">28 inches</option><option value="30&quot;">30 inches</option>
+                </select>
+                <label class="visually-hidden" for="bundle-quantity">Quantity</label>
+                <input id="bundle-quantity" name="quantity" type="number" min="1" max="10" value="1" inputmode="numeric">
+                <button class="button button-dark add-button" type="submit">Add to bag <span aria-hidden="true">↗</span></button>
+              </div>
+            </form>
+            <p class="fullness-note"><span>✦</span> <strong>Planning your look?</strong> For a natural look at 12–18", we recommend 3 bundles. For 20" and longer, choose 3–4 bundles for fullness through the ends.</p>
+            <p class="multi-length-note">Creating a multi-length look? Add each length to your bag separately.</p>
+          </div>
+        </div>
+      </section>
+      <section class="closing-banner">
+        <p class="eyebrow">A little care goes a long way</p>
+        <h2>Keep your crown <em>looking like royalty.</em></h2>
+        <a class="button button-light" href="care.html">Read the care guide <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="footer-brand" href="index.html"><img src="media/logo.png" alt="Hair Kingdom"></a>
+      <p>Beautiful hair, with beautiful care.</p>
+      <nav aria-label="Footer navigation"><a href="shop.html" aria-current="page">Shop</a><a href="story.html">Our story</a><a href="care.html">Hair care</a><a href="returns.html">Returns</a></nav>
+      <span class="copyright">© <span id="current-year"></span> Hair Kingdom. Made with care.</span>
+    </footer>
+    <div class="cart-backdrop" hidden></div>
+    <aside class="cart-panel" aria-label="Shopping bag" aria-hidden="true" inert>
+      <div class="cart-header"><div><p class="eyebrow">Your royal selection</p><h2>Your bag <span class="cart-heading-count">(0)</span></h2></div><button class="cart-close" type="button" aria-label="Close shopping bag">×</button></div>
+      <div class="cart-items"></div>
+      <div class="cart-empty"><span>♛</span><p>Your bag is waiting for its first crown.</p><button class="text-link continue-shopping" type="button">Discover the collection <span aria-hidden="true">↗</span></button></div>
+      <div class="cart-footer"><p>Use your bag to plan your bundle selection. Pricing and checkout are not set up on this site yet.</p><button class="button button-dark cart-continue" type="button">Continue exploring</button></div>
+    </aside>
+    <div class="visually-hidden" aria-live="polite" id="announcements"></div>
+  </body>
+</html>
