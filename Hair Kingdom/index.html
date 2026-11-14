@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#17130f">
+    <meta name="description" content="Discover premium, unprocessed human hair bundles and thoughtful hair care from Hair Kingdom. Royalty-grade quality, trusted since 2021.">
+    <title>Hair Kingdom — Your Crown, Your Kingdom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">A little luxury for your everyday crown <span aria-hidden="true">✦</span> Trusted since 2021</div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Hair Kingdom home">
+        <img src="media/logo.png" alt="Hair Kingdom — Beautiful Hair, with beautiful care">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#story">Our story</a>
+        <a href="#care">Hair care</a>
+        <a href="#returns">Returns</a>
+      </nav>
+      <button class="bag-button" type="button" aria-label="Open shopping bag">
+        Bag <span class="bag-count" aria-live="polite">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark">✦</span> Hair fit for royalty</p>
+          <h1>Your crown.<br>Your <em>kingdom.</em></h1>
+          <p class="hero-description">Premium human hair, made for the way you want to show up. Beautifully natural, endlessly versatile, always you.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#shop">Shop the collection <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#story">Get to know us <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof">
+            <span class="proof-crown" aria-hidden="true">♛</span>
+            <span>Royalty-grade quality, trusted since 2021</span>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Confident woman with long, beautiful hair" fetchpriority="high">
+          <div class="hero-stamp" aria-label="Hair Kingdom, quality fit for royalty">
+            <span class="stamp-crown">♛</span>
+            <span>QUALITY FIT<br>FOR ROYALTY</span>
+            <span class="stamp-star">✦</span>
+          </div>
+          <div class="hero-caption"><span>01 / 03</span><span>Made for your moment</span></div>
+        </div>
+        <a class="scroll-cue" href="#shop"><span></span> Scroll to discover</a>
+      </section>
+
+      <section class="promise-strip" aria-label="Our promises">
+        <div><span class="promise-icon">✦</span><span>100% human hair</span></div>
+        <div><span class="promise-icon">♧</span><span>Made to be restyled</span></div>
+        <div><span class="promise-icon">♛</span><span>Care in every detail</span></div>
+        <div><span class="promise-icon">♡</span><span>Your confidence, always</span></div>
+      </section>
+
+      <section class="shop-section section-pad" id="shop">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The signature collection</p>
+            <h2>Meet your new <em>favorite.</em></h2>
+          </div>
+          <p>One beautiful texture. A whole world of possibilities. Find your length and make it yours.</p>
+        </div>
+        <div class="product-layout">
+          <div class="product-visual">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Model showcasing long, flowing hair" loading="lazy">
+            <span class="product-image-label">THE SIGNATURE TEXTURE <span>✦</span></span>
+          </div>
+          <div class="product-details">
+            <p class="eyebrow">Hair Kingdom essential</p>
+            <h3>Body Wave Bundles</h3>
+            <div class="review-line"><span class="product-sparkle" aria-hidden="true">✦</span><span>Made for your everyday and everything-after</span></div>
+            <p class="product-intro">Meet ultra-luxurious body wave: a soft, cascading pattern with natural movement and a beautiful finish. Wear it wavy, straighten it sleek, or style it your way.</p>
+            <ul class="product-features">
+              <li><span>Material</span><span>100% unprocessed human hair</span></li>
+              <li><span>Weight</span><span>Approx. 3.5 oz (100 g) per bundle</span></li>
+              <li><span>Color</span><span>Natural black / 1B</span></li>
+              <li><span>Construction</span><span>Double wefted, full from root to tip</span></li>
+              <li><span>Versatility</span><span>Can be heat styled and custom colored</span></li>
+              <li><span>Longevity</span><span>1–2+ years with proper care</span></li>
+            </ul>
+            <form class="add-to-bag-form">
+              <label class="field-label" for="bundle-length">Choose your length</label>
+              <div class="product-controls">
+                <select id="bundle-length" name="length" aria-label="Bundle length">
+                  <option value="12&quot;">12 inches</option>
+                  <option value="14&quot;">14 inches</option>
+                  <option value="16&quot;">16 inches</option>
+                  <option value="18&quot;" selected>18 inches</option>
+                  <option value="20&quot;">20 inches</option>
+                  <option value="22&quot;">22 inches</option>
+                  <option value="24&quot;">24 inches</option>
+                  <option value="26&quot;">26 inches</option>
+                  <option value="28&quot;">28 inches</option>
+                  <option value="30&quot;">30 inches</option>
+                </select>
+                <label class="visually-hidden" for="bundle-quantity">Quantity</label>
+                <input id="bundle-quantity" name="quantity" type="number" min="1" max="10" value="1" inputmode="numeric">
+                <button class="button button-dark add-button" type="submit">Add to bag <span aria-hidden="true">↗</span></button>
+              </div>
+            </form>
+            <p class="fullness-note"><span>✦</span> <strong>Planning your look?</strong> For a natural look at 12–18", we recommend 3 bundles. For 20" and longer, choose 3–4 bundles for fullness through the ends.</p>
+            <p class="multi-length-note">Creating a multi-length look? Add each length to your bag separately.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section section-pad" id="story">
+        <div class="story-image-wrap">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Woman confidently wearing her natural style" loading="lazy">
+          <span class="story-image-note">A little more you, every day.</span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">A note from our kingdom</p>
+          <h2>Great hair.<br><em>Even greater</em> confidence.</h2>
+          <p>Welcome to the Kingdom, where your crowning glory gets the royal treatment it deserves.</p>
+          <p>Founded in 2021, Hair Kingdom was born from a simple, powerful mission: to give everyday women, stylists, and hair enthusiasts access to premium, uncompromised human hair that looks beautiful and lasts.</p>
+          <p>From a sleek, bone-straight look for the boardroom to bouncy waves for a special occasion or deep curls for vacation, our hair is made to handle heat, custom color, and daily life while maintaining its natural luster.</p>
+          <p>We don't just sell extensions; we invest in your confidence. When you choose Hair Kingdom, you choose royalty-grade quality and care from a brand trusted since 2021.</p>
+          <p class="story-signoff">Thank you for letting us be part of your hair journey. Welcome to royalty. <span>♛</span></p>
+        </div>
+      </section>
+
+      <section class="care-section section-pad" id="care">
+        <div class="care-heading">
+          <p class="eyebrow">A little care goes a long way</p>
+          <h2>Keep your crown<br><em>looking like royalty.</em></h2>
+          <p>Our 100% human hair bundles can last 4+ years with proper maintenance. Since the hair no longer receives natural oils from a scalp, keeping it clean, hydrated, and protected is up to you.</p>
+        </div>
+        <div class="care-grid">
+          <article class="care-card">
+            <span class="care-number">01</span><span class="care-icon" aria-hidden="true">♧</span>
+            <h3>Wash & condition</h3>
+            <p>Use sulfate- and alcohol-free shampoo and conditioner. Smooth shampoo downward from weft to tips in lukewarm water—never rub, bunch, or massage. Deep condition weekly for 15–30 minutes, then rinse with cool water.</p>
+          </article>
+          <article class="care-card">
+            <span class="care-number">02</span><span class="care-icon" aria-hidden="true">⌁</span>
+            <h3>Dry & detangle</h3>
+            <p>Skip the blow dryer. Gently pat with a microfiber towel and lay flat or hang to air dry. Never brush while soaking wet. Once dry or damp, detangle from the tips upward with a wide-tooth comb or flexible brush.</p>
+          </article>
+          <article class="care-card">
+            <span class="care-number">03</span><span class="care-icon" aria-hidden="true">✧</span>
+            <h3>Style with care</h3>
+            <p>Always use a lightweight heat protectant and keep hot tools under 350°F (175°C). Hair can be bleached or dyed, but chemical processing can dry it out—visit a professional colorist if you're not a licensed stylist.</p>
+          </article>
+          <article class="care-card">
+            <span class="care-number">04</span><span class="care-icon" aria-hidden="true">☾</span>
+            <h3>Protect it at night</h3>
+            <p>Never sleep on wet hair. Before bed, brush gently and secure in a loose ponytail, braid, or wrap under a silk bonnet. A silk or satin pillowcase helps reduce friction and moisture loss from cotton.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="returns-section section-pad" id="returns">
+        <div class="returns-heading">
+          <p class="eyebrow">The details, made clear</p>
+          <h2>Our return &<br><em>refund policy.</em></h2>
+          <p>We take immense pride in our premium human hair bundles. Since extensions are a hygienic product, we follow strict return standards to protect everyone's health and safety.</p>
+          <div class="policy-window"><span class="policy-window-icon">↺</span><span><strong>7-day window</strong><br>From the date your tracking shows delivery</span></div>
+        </div>
+        <div class="policy-list">
+          <article class="policy-item">
+            <span class="policy-index">01</span><div><h3>Return & exchange window</h3><p>Returns and exchanges are accepted within 7 days of the delivery date shown by your tracking. After 7 days, we’re unable to offer a refund or exchange.</p></div>
+          </article>
+          <article class="policy-item">
+            <span class="policy-index">02</span><div><h3>Strict return conditions</h3><p>Bundles must be in the exact condition in which they arrived. For hygiene reasons, we cannot accept bundles if security ties or rubber bands have been cut, untied, or loosened; hair has been washed, co-washed, combed, brushed, or fingers run through it; hair has been installed, cut, bleached, colored, or treated with styling products; or original packaging, silk tags, or labels are missing. Any alteration to the bundle structure makes it ineligible for return.</p></div>
+          </article>
+          <article class="policy-item">
+            <span class="policy-index">03</span><div><h3>How to start a return</h3><p>Within 7 days of delivery, contact our support team using the email address listed in your order confirmation. Include your order number and photos showing the hair is still securely tied and untampered with. Once approved, we’ll send the correct return address. Customers pay return shipping; original shipping costs are non-refundable.</p></div>
+          </article>
+          <article class="policy-item">
+            <span class="policy-index">04</span><div><h3>Refunds & processing</h3><p>When we receive and inspect your return, we’ll email you to confirm receipt and let you know whether the refund is approved. Approved refunds are automatically credited to your original payment method within 5–7 business days. If returned hair is altered or used, the refund will be denied and the item will be shipped back at your expense.</p></div>
+          </article>
+          <article class="policy-item">
+            <span class="policy-index">05</span><div><h3>Order cancellations & changes</h3><p>You may request an order change or cancellation within 2 hours of placing your order. Once an order has been packed and handed to the shipping carrier, we can no longer cancel or modify it.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing-banner">
+        <p class="eyebrow">Your next chapter starts here</p>
+        <h2>Ready to wear your <em>crown?</em></h2>
+        <a class="button button-light" href="#shop">Find your perfect bundle <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home"><img src="media/logo.png" alt="Hair Kingdom"></a>
+      <p>Beautiful hair, with beautiful care.</p>
+      <nav aria-label="Footer navigation">
+        <a href="#shop">Shop</a><a href="#story">Our story</a><a href="#care">Hair care</a><a href="#returns">Returns</a>
+      </nav>
+      <span class="copyright">© <span id="current-year"></span> Hair Kingdom. Made with care.</span>
+    </footer>
+
+    <div class="cart-backdrop" hidden></div>
+    <aside class="cart-panel" aria-label="Shopping bag" aria-hidden="true" inert>
+      <div class="cart-header">
+        <div><p class="eyebrow">Your royal selection</p><h2>Your bag <span class="cart-heading-count">(0)</span></h2></div>
+        <button class="cart-close" type="button" aria-label="Close shopping bag">×</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-empty"><span>♛</span><p>Your bag is waiting for its first crown.</p><button class="text-link continue-shopping" type="button">Discover the collection <span aria-hidden="true">↗</span></button></div>
+      <div class="cart-footer">
+        <p>Use your bag to plan your bundle selection. Pricing and checkout are not set up on this site yet.</p>
+        <button class="button button-dark cart-continue" type="button">Continue exploring</button>
+      </div>
+    </aside>
+    <div class="visually-hidden" aria-live="polite" id="announcements"></div>
+  </body>
+</html>
