@@ -31,6 +31,37 @@ const addToBagForm = document.querySelector(".add-to-bag-form");
 
 if (cartPanel && cartBackdrop && bagCount && cartItems && cartHeadingCount && announcement) {
   const bag = [];
+  const bundleProducts = {
+    "straight-body-wave": {
+      name: "Straight/Body Wave Bundles",
+      description: "Choose straight or body wave for a soft, versatile look with natural movement. Wear it wavy, straighten it sleek, or style it your way.",
+      prices: { 16: 90, 18: 110, 20: 130, 22: 150, 24: 160, 26: 180, 28: 200, 30: 240 }
+    },
+    "loose-wave-burmese-curly": {
+      name: "Loose Wave/Burmese Curly",
+      description: "Choose loose wave or Burmese curly for a beautiful, textured look with natural movement.",
+      prices: { 16: 100, 18: 115, 20: 135, 22: 155, 24: 165, 26: 185, 28: 205, 30: 260 }
+    }
+  };
+  const textureSelect = document.querySelector("#bundle-texture");
+  const lengthSelect = document.querySelector("#bundle-length");
+  const productTitle = document.querySelector("#bundle-title");
+  const productDescription = document.querySelector("#bundle-description");
+  const productPrice = document.querySelector("#bundle-price");
+
+  function updateBundleSelection() {
+    const product = bundleProducts[textureSelect.value];
+    const price = product.prices[lengthSelect.value];
+    productTitle.textContent = product.name;
+    productDescription.textContent = product.description;
+    productPrice.textContent = `$${price}`;
+  }
+
+  if (textureSelect && lengthSelect && productTitle && productDescription && productPrice) {
+    textureSelect.addEventListener("change", updateBundleSelection);
+    lengthSelect.addEventListener("change", updateBundleSelection);
+    updateBundleSelection();
+  }
 
   function renderBag() {
     const totalQuantity = bag.reduce((total, item) => total + item.quantity, 0);
@@ -45,19 +76,19 @@ if (cartPanel && cartBackdrop && bagCount && cartItems && cartHeadingCount && an
       const details = document.createElement("div");
       const title = document.createElement("h3");
       title.className = "cart-item-title";
-      title.textContent = "Body Wave Bundle";
+      title.textContent = item.product;
       const description = document.createElement("p");
       description.className = "cart-item-description";
-      description.textContent = `${item.length} · Quantity ${item.quantity}`;
+      description.textContent = `${item.length}" · $${item.price} each · Quantity ${item.quantity}`;
       const remove = document.createElement("button");
       remove.type = "button";
       remove.className = "cart-remove";
       remove.textContent = "Remove";
-      remove.setAttribute("aria-label", `Remove ${item.length} Body Wave Bundle from bag`);
+      remove.setAttribute("aria-label", `Remove ${item.length}-inch ${item.product} from bag`);
       remove.addEventListener("click", () => {
         bag.splice(index, 1);
         renderBag();
-        announcement.textContent = `${item.length} Body Wave Bundle removed from your bag.`;
+        announcement.textContent = `${item.length}-inch ${item.product} removed from your bag.`;
       });
       details.append(title, description);
       row.append(details, remove);
@@ -98,7 +129,9 @@ if (cartPanel && cartBackdrop && bagCount && cartItems && cartHeadingCount && an
     addToBagForm.addEventListener("submit", (event) => {
       event.preventDefault();
       const form = event.currentTarget;
-      const length = form.querySelector("#bundle-length").value;
+      const length = Number(lengthSelect.value);
+      const product = bundleProducts[textureSelect.value];
+      const price = product.prices[length];
       const quantity = Number(form.elements.quantity.value);
 
       if (!Number.isInteger(quantity) || quantity < 1 || quantity > 10) {
@@ -108,12 +141,12 @@ if (cartPanel && cartBackdrop && bagCount && cartItems && cartHeadingCount && an
         return;
       }
 
-      const existingItem = bag.find((item) => item.length === length);
+      const existingItem = bag.find((item) => item.length === length && item.product === product.name);
       if (existingItem) existingItem.quantity += quantity;
-      else bag.push({ length, quantity });
+      else bag.push({ product: product.name, length, price, quantity });
 
       renderBag();
-      announcement.textContent = `${quantity} ${length} Body Wave Bundle${quantity === 1 ? "" : "s"} added to your bag.`;
+      announcement.textContent = `${quantity} ${length}-inch ${product.name} added to your bag.`;
       openBag();
     });
   }

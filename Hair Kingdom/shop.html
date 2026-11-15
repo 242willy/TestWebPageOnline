@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#17130f">
-    <meta name="description" content="Shop premium, unprocessed human hair Body Wave Bundles from Hair Kingdom.">
-    <title>Shop Body Wave Bundles — Hair Kingdom</title>
+    <meta name="description" content="Shop Hair Kingdom Straight/Body Wave and Loose Wave/Burmese Curly human hair bundles in lengths 16–30 inches.">
+    <title>Shop Hair Bundles — Hair Kingdom</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
       <section class="page-intro">
         <p class="eyebrow">The signature collection</p>
         <h1>Meet your new <em>favorite.</em></h1>
-        <p>One beautiful texture. A whole world of possibilities. Find your length and make it yours.</p>
+        <p>Explore versatile textures and lengths. Find the bundle that feels like you.</p>
       </section>
       <section class="shop-section section-pad" id="product">
         <div class="product-layout">
@@ -36,9 +36,10 @@
           </div>
           <div class="product-details">
             <p class="eyebrow">Hair Kingdom essential</p>
-            <h2>Body Wave Bundles</h2>
+            <h2 id="bundle-title">Straight/Body Wave Bundles</h2>
             <div class="review-line"><span class="product-sparkle" aria-hidden="true">✦</span><span>Made for your everyday and everything-after</span></div>
-            <p class="product-intro">Meet ultra-luxurious body wave: a soft, cascading pattern with natural movement and a beautiful finish. Wear it wavy, straighten it sleek, or style it your way.</p>
+            <p class="product-intro" id="bundle-description">Choose straight or body wave for a soft, versatile look with natural movement. Wear it wavy, straighten it sleek, or style it your way.</p>
+            <p class="bundle-price" aria-live="polite">Price per bundle: <strong id="bundle-price">$110</strong></p>
             <ul class="product-features">
               <li><span>Material</span><span>100% unprocessed human hair</span></li>
               <li><span>Weight</span><span>Approx. 3.5 oz (100 g) per bundle</span></li>
@@ -48,19 +49,57 @@
               <li><span>Longevity</span><span>1–2+ years with proper care</span></li>
             </ul>
             <form class="add-to-bag-form">
+              <label class="field-label" for="bundle-texture">Choose your texture</label>
+              <select class="bundle-texture" id="bundle-texture" name="texture">
+                <option value="straight-body-wave">Straight/Body Wave Bundles</option>
+                <option value="loose-wave-burmese-curly">Loose Wave/Burmese Curly</option>
+              </select>
               <label class="field-label" for="bundle-length">Choose your length</label>
               <div class="product-controls">
                 <select id="bundle-length" name="length" aria-label="Bundle length">
-                  <option value="12&quot;">12 inches</option><option value="14&quot;">14 inches</option><option value="16&quot;">16 inches</option><option value="18&quot;" selected>18 inches</option><option value="20&quot;">20 inches</option><option value="22&quot;">22 inches</option><option value="24&quot;">24 inches</option><option value="26&quot;">26 inches</option><option value="28&quot;">28 inches</option><option value="30&quot;">30 inches</option>
+                  <option value="16">16 inches</option><option value="18" selected>18 inches</option><option value="20">20 inches</option><option value="22">22 inches</option><option value="24">24 inches</option><option value="26">26 inches</option><option value="28">28 inches</option><option value="30">30 inches</option>
                 </select>
                 <label class="visually-hidden" for="bundle-quantity">Quantity</label>
                 <input id="bundle-quantity" name="quantity" type="number" min="1" max="10" value="1" inputmode="numeric">
                 <button class="button button-dark add-button" type="submit">Add to bag <span aria-hidden="true">↗</span></button>
               </div>
             </form>
-            <p class="fullness-note"><span>✦</span> <strong>Planning your look?</strong> For a natural look at 12–18", we recommend 3 bundles. For 20" and longer, choose 3–4 bundles for fullness through the ends.</p>
+            <p class="fullness-note"><span>✦</span> <strong>Planning your look?</strong> For a natural look at 16–18", we recommend 3 bundles. For 20" and longer, choose 3–4 bundles for fullness through the ends.</p>
             <p class="multi-length-note">Creating a multi-length look? Add each length to your bag separately.</p>
+            <div class="shop-order-notes" aria-label="Shipping and order changes">
+              <p><strong>Shipping</strong><span>Ships in 3–5 business days.</span></p>
+              <p><strong>Exchanges</strong><span>No exchanges on orders that have already shipped.</span></p>
+              <p><strong>Order changes</strong><span>Changes may be requested within 2 hours of order confirmation.</span></p>
+            </div>
           </div>
+        </div>
+        <div class="bundle-price-lists" aria-label="Bundle prices by texture and length">
+          <section class="bundle-price-card" aria-labelledby="straight-body-wave-prices">
+            <h2 id="straight-body-wave-prices">Straight/Body Wave Bundles</h2>
+            <ul class="bundle-price-table">
+              <li><span>16 inches</span><strong>$90</strong></li>
+              <li><span>18 inches</span><strong>$110</strong></li>
+              <li><span>20 inches</span><strong>$130</strong></li>
+              <li><span>22 inches</span><strong>$150</strong></li>
+              <li><span>24 inches</span><strong>$160</strong></li>
+              <li><span>26 inches</span><strong>$180</strong></li>
+              <li><span>28 inches</span><strong>$200</strong></li>
+              <li><span>30 inches</span><strong>$240</strong></li>
+            </ul>
+          </section>
+          <section class="bundle-price-card" aria-labelledby="loose-wave-burmese-curly-prices">
+            <h2 id="loose-wave-burmese-curly-prices">Loose Wave/Burmese Curly</h2>
+            <ul class="bundle-price-table">
+              <li><span>16 inches</span><strong>$100</strong></li>
+              <li><span>18 inches</span><strong>$115</strong></li>
+              <li><span>20 inches</span><strong>$135</strong></li>
+              <li><span>22 inches</span><strong>$155</strong></li>
+              <li><span>24 inches</span><strong>$165</strong></li>
+              <li><span>26 inches</span><strong>$185</strong></li>
+              <li><span>28 inches</span><strong>$205</strong></li>
+              <li><span>30 inches</span><strong>$260</strong></li>
+            </ul>
+          </section>
         </div>
       </section>
       <section class="closing-banner">
@@ -80,7 +119,7 @@
       <div class="cart-header"><div><p class="eyebrow">Your royal selection</p><h2>Your bag <span class="cart-heading-count">(0)</span></h2></div><button class="cart-close" type="button" aria-label="Close shopping bag">×</button></div>
       <div class="cart-items"></div>
       <div class="cart-empty"><span>♛</span><p>Your bag is waiting for its first crown.</p><button class="text-link continue-shopping" type="button">Discover the collection <span aria-hidden="true">↗</span></button></div>
-      <div class="cart-footer"><p>Use your bag to plan your bundle selection. Pricing and checkout are not set up on this site yet.</p><button class="button button-dark cart-continue" type="button">Continue exploring</button></div>
+      <div class="cart-footer"><p>Use your bag to plan your bundle selection. Checkout is not set up on this site yet.</p><button class="button button-dark cart-continue" type="button">Continue exploring</button></div>
     </aside>
     <div class="visually-hidden" aria-live="polite" id="announcements"></div>
   </body>
