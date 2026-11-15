@@ -31,16 +31,28 @@ const addToBagForm = document.querySelector(".add-to-bag-form");
 
 if (cartPanel && cartBackdrop && bagCount && cartItems && cartHeadingCount && announcement) {
   const bag = [];
+  const straightPrices = { 16: 90, 18: 110, 20: 130, 22: 150, 24: 160, 26: 180, 28: 200, 30: 240 };
+  const wavePrices = { 16: 100, 18: 115, 20: 135, 22: 155, 24: 165, 26: 185, 28: 205, 30: 260 };
   const bundleProducts = {
-    "straight-body-wave": {
-      name: "Straight/Body Wave Bundles",
-      description: "Choose straight or body wave for a soft, versatile look with natural movement. Wear it wavy, straighten it sleek, or style it your way.",
-      prices: { 16: 90, 18: 110, 20: 130, 22: 150, 24: 160, 26: 180, 28: 200, 30: 240 }
+    straight: {
+      name: "Straight Bundles",
+      description: "Smooth, sleek straight bundles that can be styled your way.",
+      prices: straightPrices
     },
-    "loose-wave-burmese-curly": {
-      name: "Loose Wave/Burmese Curly",
-      description: "Choose loose wave or Burmese curly for a beautiful, textured look with natural movement.",
-      prices: { 16: 100, 18: 115, 20: 135, 22: 155, 24: 165, 26: 185, 28: 205, 30: 260 }
+    "body-wave": {
+      name: "Body Wave Bundles",
+      description: "A soft, cascading wave pattern with natural movement and a beautiful finish.",
+      prices: straightPrices
+    },
+    "loose-wave": {
+      name: "Loose Wave",
+      description: "Loose, flowing waves bring natural movement and a beautiful textured finish.",
+      prices: wavePrices
+    },
+    "burmese-curly": {
+      name: "Burmese Curly",
+      description: "Defined curls create a full, textured look with natural movement.",
+      prices: wavePrices
     }
   };
   const textureSelect = document.querySelector("#bundle-texture");
